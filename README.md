@@ -47,6 +47,9 @@ source venv/bin/activate
 # Windows (PowerShell)
 python -m venv venv
 venv\Scripts\Activate.ps1
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 2. **Create `requirements.txt`**
