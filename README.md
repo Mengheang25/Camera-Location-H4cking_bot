@@ -68,13 +68,13 @@ If you see errors about building wheels or missing compilers, remove the `--only
 Create a `.env` file or export these variables before running the services:
 
 - `TELEGRAM_BOT_TOKEN` — Your bot token from BotFather.
-- `BOT_PASSWORD` — (Optional) A password you can require for users before using bot commands.
+- `NGROK_AUTHTOKEN` — authtoken API from ngrok.
 
 Example `.env`:
 
 ```
-TELEGRAM_BOT_TOKEN=273254636:SSuFD643DrsUtGFGJFskdGFs
-BOT_PASSWORD=your_secret_password
+TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN_HERE
+NGROK_AUTHTOKEN=YOUR_NGROK_AUTH_TOKEN_HERE
 ```
 
 **Security note:** Keep your bot token secret. Never commit it to a public repository.
@@ -91,7 +91,7 @@ Terminal 1 (web server):
 ```bash
 # POSIX example
 export TELEGRAM_BOT_TOKEN="<token>"
-export BOT_PASSWORD="<password>"
+export NGROK_AUTHTOKEN=YOUR_NGROK_AUTH_TOKEN_HERE
 python web_server.py
 ```
 
@@ -108,7 +108,7 @@ If you have `launcher.py` (a small script that starts Flask in a thread and runs
 
 ```bash
 export TELEGRAM_BOT_TOKEN="<token>"
-export BOT_PASSWORD="<password>"
+export NGROK_AUTHTOKEN=YOUR_NGROK_AUTH_TOKEN_HERE
 python launcher.py
 ```
 
