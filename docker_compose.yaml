@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  bot:
+    build: .
+    container_name: mh4ck_bot
+    env_file:
+      - .env
+    command: python launcher.py
+    depends_on:
+      - web
+    networks:
+      - mh4ck_network
+
+  web:
+    build: .
+    container_name: mh4ck_web
+    env_file:
+      - .env
+    command: python web_server.py
+    ports:
+      - "8080:8080"
+    networks:
+      - mh4ck_network
+
+networks:
+  mh4ck_network:
+    driver: bridge
