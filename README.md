@@ -1,4 +1,4 @@
-# 📸 M.h4ck Camera – Tracking Telegram Bot
+# 📸 Camera & Location – Hacking via Telegram Bot
 
 This project is a **Tracking Telegram Bot** that demonstrates how a Telegram bot and a Flask web server can be used together to generate tracking links and collect device information when someone visits those links. The collected data (device info, location, camera photos, IP, etc.) is posted back to the server and forwarded to the link creator via Telegram notifications.
 
